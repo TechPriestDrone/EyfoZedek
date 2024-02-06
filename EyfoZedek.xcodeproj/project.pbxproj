@@ -11,6 +11,9 @@
 		ED6C0EDE2B697E64000CEBC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6C0EDD2B697E64000CEBC4 /* ContentView.swift */; };
 		ED6C0EE02B697E65000CEBC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6C0EDF2B697E65000CEBC4 /* Assets.xcassets */; };
 		ED6C0EE32B697E65000CEBC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6C0EE22B697E65000CEBC4 /* Preview Assets.xcassets */; };
+		EDA219932B7159DA004BA6F6 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA219922B7159DA004BA6F6 /* APICall.swift */; };
+		EDA219952B7161B5004BA6F6 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA219942B7161B5004BA6F6 /* DataModel.swift */; };
+		EDA219982B7177F4004BA6F6 /* EyfoZedekViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA219972B7177F4004BA6F6 /* EyfoZedekViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		ED6C0EDD2B697E64000CEBC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ED6C0EDF2B697E65000CEBC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED6C0EE22B697E65000CEBC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EDA219922B7159DA004BA6F6 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		EDA219942B7161B5004BA6F6 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		EDA219972B7177F4004BA6F6 /* EyfoZedekViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyfoZedekViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,8 @@
 		ED6C0EDA2B697E64000CEBC4 /* EyfoZedek */ = {
 			isa = PBXGroup;
 			children = (
+				EDA219962B7177D7004BA6F6 /* ViewModel */,
+				EDA219912B7159BE004BA6F6 /* NetworkServices */,
 				ED6C0EDB2B697E64000CEBC4 /* EyfoZedekApp.swift */,
 				ED6C0EDD2B697E64000CEBC4 /* ContentView.swift */,
 				ED6C0EDF2B697E65000CEBC4 /* Assets.xcassets */,
@@ -65,6 +73,23 @@
 				ED6C0EE22B697E65000CEBC4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EDA219912B7159BE004BA6F6 /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				EDA219922B7159DA004BA6F6 /* APICall.swift */,
+				EDA219942B7161B5004BA6F6 /* DataModel.swift */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		EDA219962B7177D7004BA6F6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EDA219972B7177F4004BA6F6 /* EyfoZedekViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED6C0EDE2B697E64000CEBC4 /* ContentView.swift in Sources */,
+				EDA219982B7177F4004BA6F6 /* EyfoZedekViewModel.swift in Sources */,
+				EDA219952B7161B5004BA6F6 /* DataModel.swift in Sources */,
 				ED6C0EDC2B697E64000CEBC4 /* EyfoZedekApp.swift in Sources */,
+				EDA219932B7159DA004BA6F6 /* APICall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

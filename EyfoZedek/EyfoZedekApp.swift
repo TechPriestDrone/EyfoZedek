@@ -11,7 +11,7 @@ import SwiftUI
 struct EyfoZedekApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(mainViewModel: MainViewModel())
         }
     }
 }

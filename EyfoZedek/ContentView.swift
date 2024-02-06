@@ -8,17 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var mainViewModel: MainViewModel
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            if mainViewModel.numberToDisplay == ""{
+                Button(action: {
+                    mainViewModel.getDataFromAPI()
+                }, label: {
+                    Text("מצא צדק")
+                })
+            } else {
+                Text("")
+            }
+            if mainViewModel.numberToDisplay == ""{
+                Text("")
+            } else {
+                Text("הצדק שחיפשת נמצא \(mainViewModel.numberToDisplay) קילומטר ממך.ֿ\n כי הוא כוכב לכת. \n והוא מאוד רחוק.")
+                    .multilineTextAlignment(.center)
+                    .padding()
+            }
         }
         .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(mainViewModel: MainViewModel())
 }
